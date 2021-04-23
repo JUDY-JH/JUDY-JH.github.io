@@ -1,0 +1,221 @@
+<!DOCTYPE html><!--22061028 김주희-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>3D DESIGN</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .menu p{
+            color: rgb(255, 255, 255);
+        }
+        .wrap{
+            min-width: 700px;
+            max-width: 16000px;
+            margin: 0px auto;
+        }
+        header{
+            background-color: #000000;
+            color: white;
+        }
+        header h1{
+            margin: 10px 0px;
+        }
+        header h1 span{
+            color: #fca9ff
+        }
+        header ul{
+            padding: 0px;
+            margin: 20px 0px;
+        }
+        header li{
+            float:left;
+            list-style: none;
+            padding: 0px 20px;
+        }
+        .float_left{
+            float:left;
+        }
+        .float_right{
+            float:right;
+        }
+        .clearfix::after{ /* float left 이상증상 방지 */
+            content: ""; /* 특정 브라우저 이상증상 해결용 */
+            clear: both; /* float 제거 : 양쪽(둘다) */
+            display: table; /* 특정 브라우저 이상증상 해결용 */
+        }
+        #main_visual{
+            background-image:url("img/comp1.gif");
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: 100px 100px; /*고정값*/
+            background-size: 50% auto; /*가변값*/
+            background-size: cover;
+            background-position: 0px 0px; /*좌상단 고정*/
+            background-position: 50% 50%; /*좌우 중앙, 상하 중앙*/
+            /*auto, contain, cover*/
+
+            color: white;
+            text-align: center;
+            padding: 0px;
+            /* height: 300px; */
+        }
+        #main_visual h2{
+            font-size: 45px;
+            letter-spacing: 10px;
+            margin: 0px;
+            width: 800px;
+            margin: 0px auto;
+        }
+        #main_visual p{
+            font-size: 14px;
+            margin: 0px;
+        }
+        #main_visual img{
+            margin-top: 0px;
+        }
+        section {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        section h1{
+            color:orange;
+            font-size: 30px;
+            padding-top: 5px;
+            padding-bottom: 0px;
+        }
+        section h2 {
+            color:purple;
+        }
+        section p{
+            color:black;
+        }
+        footer{
+            background-color: #333;
+            padding: 20px;
+            color: #F5A7BC;
+            font-weight: bold;
+        }
+        footer li{
+            float: left;
+            list-style: none;
+            padding:0px 10px;
+        }
+        /* footer ui:first-child li */
+        #footer_left li{
+             border-right:solid 1px gray;
+        }
+        #footer_left li:last-child{
+            border: none;
+        }
+        footer ul{
+            padding: 0px;
+        }
+        /*
+        footer>div{
+            float:left;
+        }
+        */
+        .clearfix::after{ /* float left 이상증상 방지 */
+            content: ""; /* 특정 브라우저 이상증상 해결용 */
+            clear: both; /* float 제거 : 양쪽(둘다) */
+            display: table; /* 특정 브라우저 이상증상 해결용 */
+        }
+        .menu{
+            text-decoration: none;
+            color:white;
+        }
+        .mang {
+            text-decoration: none;
+            color: white;
+        }
+        .foot {
+          text-decoration: none;
+          color: pink;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h1 class="float_left"><a class="mang" href="index.html">L'effort est ma <span>force</span></a></h1>
+            <nav class="float_right">
+                <ul class="clearfix">
+                    <li><a class="menu" href="profile.html">PROFILE</a></li>
+                    <li><a class="menu" href="project.html">PROJECT</a></li>
+                    <li><a class="menu" href="work.html">WORK</a></li>
+                    <li><a class="menu" href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <section>
+      <h1>
+          3D DESIGN
+      </h1>
+      <P>
+          3D MAX를 활용하여 브랜딩 영상을 만들었습니다.<br><br>
+          쿠팡을 주제로 하여 로켓배송의 장점을 부각시키자 하는 목적을 가지고 제작하였습니다.<br><br>
+          랜더링으로 인한 어려움이 컸지만 완성후의 뿌듯함이 보다 더 커서 만족스러운 작업이였던 것 같습니다.
+      </P>
+      <video controls autoplay>
+      <source src="img/3ddesign.mp4" type="video/mp4"/>
+      </video>
+      <h1>
+          ꩓
+      </h1>
+      <p>
+          선정이유와 컨셉 모델링등을 간단히 정리하였습니다.
+      </p>
+      <img src="img/cp1.jpg" width="1300px">
+      <img src="img/cp2.jpg" width="1300px">
+      <img src="img/cp3.jpg" width="1300px">
+      <img src="img/cp4.jpg" width="1300px">
+      <img src="img/cp5.jpg" width="1300px">
+      <img src="img/cp6.jpg" width="1300px">
+    </section>
+    <a style="display:scroll; position:fixed; bottom:2%; right:2%;" href="#">
+    <img src="img/btbt.png"></a>
+    <a style="display:scroll; position:fixed; top:8%; left:2%;" href="project.html">
+    <img src="img/btbtback.png"></a>
+
+    <footer class="clearfix">
+        <div class="float_left">
+            <!-- 왼편 푸터 -->
+            <ul id="footer_left" class="clearfix">
+                <li><a class="foot" href="profile.html">PROFILE</li>
+                <li><a class="foot" href="project.html">PROJECT</li>
+                <li><a class="foot" href="work.html">WORK</li>
+                <li><a class="foot" href="contact.html">CONTACT</li>
+            </ul>
+            <p>
+                ⓒ 2020 JUDY. All Right Reserved.
+            </p>
+            <p>
+                the loges in the design are the property of
+                their respective owners/copyright holders.
+            </p>
+        </div>
+        <div class="float_right">
+            <!-- 오른편 푸터 -->
+            <ul class="clearfix">
+                <li>
+                    <a href="https://www.instagram.com/01.04.10_hee/"/><img src="img/ins.png" />
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCRgGeuTDxlj5_eQybPM8WjA"/><img src="img/you.png" />
+                </li>
+                <li>
+                    <a href="https://blog.naver.com/3heej"/><img src="img/naver.png" />
+                </li>
+                <li>
+                    <a href="https://m.facebook.com/profile.php?ref=bookmarks"/><img src="img/face.png" />
+                </li>
+            </ul>
+        </div>
+    </footer>
+  </body>
+</html>

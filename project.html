@@ -1,0 +1,308 @@
+<!DOCTYPE html><!--22061028 김주희-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>project</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .menu p{
+            color: rgb(255, 255, 255);
+        }
+        .wrap{
+            min-width: 700px;
+            max-width: 16000px;
+            margin: 0px auto;
+        }
+        header{
+            background-color: #000000;
+            color: white;
+        }
+        header h1{
+            margin: 10px 0px;
+        }
+        header h1 span{
+            color: #fca9ff
+        }
+        header ul{
+            padding: 0px;
+            margin: 20px 0px;
+        }
+        header li{
+            float:left;
+            list-style: none;
+            padding: 0px 20px;
+        }
+        .float_left{
+            float:left;
+        }
+        .float_right{
+            float:right;
+        }
+        .clearfix::after{ /* float left 이상증상 방지 */
+            content: ""; /* 특정 브라우저 이상증상 해결용 */
+            clear: both; /* float 제거 : 양쪽(둘다) */
+            display: table; /* 특정 브라우저 이상증상 해결용 */
+        }
+        section {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        section h1{
+            color:orange;
+            font-size: 30px;
+            padding-top: 5px;
+            padding-bottom: 0px;
+        }
+        section h2 {
+            color:purple;
+        }
+        section p{
+            color:black;
+        }
+        button{
+            widows: 120px;
+            height: 40px;
+            background-color: #e97aec;
+            color: white;
+            box-shadow: 0 4px
+            16px rgba(206, 90,
+            206, 0.4);
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+        button:focus{
+            outline: 0;
+        }
+        button:hover{
+            background-color: rgba(206, 90,
+            206, 0.4);
+            cursor: pointer;
+            box-shadow: 0 2px
+            4px rgba(206, 90,
+            206, 0.7);
+        }
+        .card{
+            width: 310px;
+            background-color: white;
+            border-right: solid gray 1px;
+            border-bottom: solid gray 1px;
+        }
+        .card_top{
+            position: relative; /* 관계형유지 */
+            /*relative인 부모객체는 absolute인 자식객체의 기준이 된다. */
+        }
+        .card_top div{
+            background-color: black;
+            color: white;
+            display: inline-block;
+            padding: 3px 5px 3px 5px;
+            position: absolute; /* 절대위치 */
+            left: 0px;
+            bottom: 0px;
+        }
+        .card_bottom{
+            padding: 25px;
+        }
+        .card-box{
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            display: inline-block;
+            margin:20px;
+            width: 100%;
+            max-width: 280px;
+            height: 360px;
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.438);
+            transition: 0.5s;
+        }
+        .card-box:hover{
+            transform: scale(0.95);
+        }
+        .img-gradient{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+            z-index: 1;
+        }
+        .text-wrap{
+            position: absolute;
+            bottom: 0;
+            padding: 24px;
+            z-index: 2;
+            text-align: left;
+        }
+        .text-wrap h2{
+            color:#fff;
+            font-size: 24px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .text-wrap p{
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .play-btn{
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            right: 24px;
+            top: 24px;
+            background: purple;
+            background-image:url(./img/icon-play.png);
+            no-repeat center;
+            background-size: 24px;
+            border-radius: 50%;
+            z-index: 2;
+        }
+        .container{
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer{
+            background-color: #333;
+            padding: 20px;
+            color: #F5A7BC;
+            font-weight: bold;
+        }
+        footer li{
+            float: left;
+            list-style: none;
+            padding:0px 10px;
+        }
+        /* footer ui:first-child li */
+        #footer_left li{
+             border-right:solid 1px gray;
+        }
+        #footer_left li:last-child{
+            border: none;
+        }
+        footer ul{
+            padding: 0px;
+        }
+        /*
+        footer>div{
+            float:left;
+        }
+        */
+        .clearfix::after{ /* float left 이상증상 방지 */
+            content: ""; /* 특정 브라우저 이상증상 해결용 */
+            clear: both; /* float 제거 : 양쪽(둘다) */
+            display: table; /* 특정 브라우저 이상증상 해결용 */
+        }
+        .menu{
+            text-decoration: none;
+            color:white;
+        }
+        .mang {
+            text-decoration: none;
+            color: white;
+        }
+        .bannner {
+            position:relative;
+            display:inline-block;
+        }
+        .foot {
+          text-decoration: none;
+          color: pink;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h1 class="float_left"><a class="mang" href="index.html">L'effort est ma <span>force</span></a></h1>
+            <nav class="float_right">
+                <ul class="clearfix">
+                    <li><a class="menu" href="profile.html">PROFILE</a></li>
+                    <li><a class="menu" href="project.html">PROJECT</a></li>
+                    <li><a class="menu" href="work.html">WORK</a></li>
+                    <li><a class="menu" href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+      </div>
+
+        <section>
+          <h1>
+              PROJECT
+          </h1>
+          <P>
+              계원예술대학교에 재학하면서 저에게 기억에 남는 세가지 작업물들을 소개하려합니다.<br><br>
+              많이 부족하고 부끄럽지만 이 모든게 노력의 흔적이며 저의 발전을 도와주었다 생각되고 앞으로 더 성장해나가리라 다짐합니다.
+          </P>
+      <div class="container">
+          <div class="card-box">
+              <div class="div.img-gradient"></div>
+              <a href="3ddesign.html"/><img src="img/pro11.jpg" alt="project 이미지" />
+              <div class="text-wrap">
+                  <h2>3D DESIGN</h2>
+                  <P>♡</P>
+              </div>
+              <div class="play-btn"></div>
+          </div>
+          <div class="card-box">
+              <div class="div.img-gradient"></div>
+              <a href="contentsdesign.html"/><img src="img/pro22.jpg" alt="project 이미지" />
+              <div class="text-wrap">
+                  <h2>CONTENTS DESIGN</h2>
+                  <P>♡</P>
+              </div>
+              <div class="play-btn"></div>
+          </div>
+          <div class="card-box">
+              <div class="div.img-gradient"></div>
+              <a href="basicdesign.html"/><img src="img/g9.png" alt="project 이미지" />
+              <div class="text-wrap">
+                  <h2>UI / UX DRAWING</h2>
+                  <P>♡</P>
+              </div>
+              <div class="play-btn"></div>
+          </div>
+      </div>
+          </section>
+
+    <footer class="clearfix">
+        <div class="float_left">
+            <!-- 왼편 푸터 -->
+            <ul id="footer_left" class="clearfix">
+                <li><a class="foot" href="profile.html">PROFILE</li>
+                <li><a class="foot" href="project.html">PROJECT</li>
+                <li><a class="foot" href="work.html">WORK</li>
+                <li><a class="foot" href="contact.html">CONTACT</li>
+            </ul>
+            <p>
+                ⓒ 2020 JUDY. All Right Reserved.
+            </p>
+            <p>
+                the loges in the design are the property of
+                their respective owners/copyright holders.
+            </p>
+        </div>
+        <div class="float_right">
+            <!-- 오른편 푸터 -->
+            <ul class="clearfix">
+                <li>
+                    <a href="https://www.instagram.com/01.04.10_hee/"/><img src="img/ins.png" />
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCRgGeuTDxlj5_eQybPM8WjA"/><img src="img/you.png" />
+                </li>
+                <li>
+                    <a href="https://blog.naver.com/3heej"/><img src="img/naver.png" />
+                </li>
+                <li>
+                    <a href="https://m.facebook.com/profile.php?ref=bookmarks"/><img src="img/face.png" />
+                </li>
+            </ul>
+        </div>
+    </footer>
+  </body>
+</html>

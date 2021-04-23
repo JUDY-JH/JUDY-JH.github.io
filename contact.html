@@ -1,0 +1,354 @@
+<!DOCTYPE html><!--22061028 김주희-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>profile</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .menu p{
+            color: rgb(255, 255, 255);
+        }
+        .wrap{
+            min-width: 700px;
+            max-width: 16000px;
+            margin: 0px auto;
+        }
+        header{
+            background-color: #000000;
+            color: white;
+        }
+        header h1{
+            margin: 10px 0px;
+        }
+        header h1 span{
+            color: #fca9ff
+        }
+        header ul{
+            padding: 0px;
+            margin: 20px 0px;
+        }
+        header li{
+            float:left;
+            list-style: none;
+            padding: 0px 20px;
+        }
+        .float_left{
+            float:left;
+        }
+        .float_right{
+            float:right;
+        }
+        .clearfix::after{ /* float left 이상증상 방지 */
+            content: ""; /* 특정 브라우저 이상증상 해결용 */
+            clear: both; /* float 제거 : 양쪽(둘다) */
+            display: table; /* 특정 브라우저 이상증상 해결용 */
+        }
+        section {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        section h1{
+            color:orange;
+            font-size: 30px;
+            padding-top: 5px;
+            padding-bottom: 0px;
+        }
+        section h2 {
+            color:purple;
+        }
+        section p{
+            color:black;
+        }
+        #about_ul{
+            padding: 0px;
+        }
+        #about_ul li{
+            list-style: none;
+            float:left;
+            width:calc( 25% - 1px - 15px - 15px );
+             /* 1/4=25% */
+            border-right: solid 1px gray;
+            padding: 15px;
+        }
+        #about_ul li:last-child{
+            border: none;
+        }
+        #about_ul dt{
+            font-weight: bold;
+            margin: 20px 0px;
+        }
+        #about_ul dd{
+            margin: 0px;
+        }
+        #work_ul{
+            padding: 0px;
+        }
+        #work_ul li{
+            float:left;
+            list-style:none;
+            width: 25%;
+        }
+        #work_ul li img{
+            width: 100%;
+            display: block;
+        }
+        #kip {
+            padding: 50px;
+            margin-left: 590px;
+        }
+        .kiki {
+          padding-bottom: 20px;
+        }
+        button{
+            widows: 120px;
+            height: 40px;
+            background-color: #e97aec;
+            color: white;
+            box-shadow: 0 4px
+            16px rgba(206, 90,
+            206, 0.4);
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+        button:focus{
+            outline: 0;
+        }
+        button:hover{
+            background-color: rgba(206, 90,
+            206, 0.4);
+            cursor: pointer;
+            box-shadow: 0 2px
+            4px rgba(206, 90,
+            206, 0.7);
+        }
+        footer{
+            background-color: #333;
+            padding: 20px;
+            color: #F5A7BC;
+            font-weight: bold;
+        }
+        footer li{
+            float: left;
+            list-style: none;
+            padding:0px 10px;
+        }
+        /* footer ui:first-child li */
+        #footer_left li{
+             border-right:solid 1px gray;
+        }
+        #footer_left li:last-child{
+            border: none;
+        }
+        footer ul{
+            padding: 0px;
+        }
+        /*
+        footer>div{
+            float:left;
+        }
+        */
+        .clearfix::after{ /* float left 이상증상 방지 */
+            content: ""; /* 특정 브라우저 이상증상 해결용 */
+            clear: both; /* float 제거 : 양쪽(둘다) */
+            display: table; /* 특정 브라우저 이상증상 해결용 */
+        }
+        .menu{
+            text-decoration: none;
+            color:white;
+        }
+        .mang {
+            text-decoration: none;
+            color: white;
+        }
+        .foot {
+          text-decoration: none;
+          color: pink;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h1 class="float_left"><a class="mang" href="index.html">L'effort est ma <span>force</span></a></h1>
+            <nav class="float_right">
+                <ul class="clearfix">
+                    <li><a class="menu" href="profile.html">PROFILE</a></li>
+                    <li><a class="menu" href="project.html">PROJECT</a></li>
+                    <li><a class="menu" href="work.html">WORK</a></li>
+                    <li><a class="menu" href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+      </div>
+
+      <section>
+          <h1>
+              Get in touch with me.
+          </h1>
+          <p>
+              ˖◛⁺˖
+          </p>
+          <br>
+          <ul id="about_ul" class="clearfix">
+              <li>
+                  <img src="img/facece3.png" width="200px"/>
+                  <dl>
+                      <dt>
+                          ☟
+                      </dt>
+                      <dd>
+                          <a href="https://www.instagram.com/01.04.10_hee/" target="_blank" >
+                          <button>INSTAGRAM</button>
+                          </a>
+                      </dd>
+                  </dl>
+              </li>
+              <li>
+                  <img src="img/facece2.png" width="200px"/>
+                  <dl>
+                      <dt>
+                          ☟
+                      </dt>
+                      <dd>
+                          <a href="https://www.youtube.com/channel/UCRgGeuTDxlj5_eQybPM8WjA" target="_blank">
+                          <button>YOUTUBE</button>
+                          </a>
+                      </dd>
+                  </dl>
+              </li>
+              <li>
+                  <img src="img/facece.png" width="200px"/>
+                  <dl>
+                      <dt>
+                          ☟
+                      </dt>
+                      <dd>
+                          <a href="https://blog.naver.com/3heej" target="_blank">
+                          <button>NAVER</button>
+                          </a>
+                      </dd>
+                  </dl>
+              </li>
+              <li>
+                  <img src="img/facece1.png" width="200px"/>
+                  <dl>
+                      <dt>
+                          ☟
+                      </dt>
+                      <dd>
+                          <a href="https://m.facebook.com/profile.php?ref=bookmarks" target="_blank">
+                          <button>FACEBOOK</button>
+                          </a>
+                      </dd>
+                  </dl>
+              </li>
+          </ul>
+    </section>
+    <section>
+        <h1>
+            Please fill it out
+        </h1>
+        <p>
+            ˚₊·—̳͟͞͞♡
+        </p>
+        <table id="kip" class="clearfix">
+          <tr>
+            <td class="kiki">-이름</td>
+            <td class="kiki"><input type="name"></td>
+          </tr>
+          <tr>
+            <td class="kiki">-성별</td>
+            <td class="kiki"><input type ="radio" name="sex" selected>여성<input type="radio"name="sex">남성</td>
+          </tr>
+          <tr>
+            <td class="kiki">-전화번호</td>
+            <td class="kiki"><select>
+              <option>02</option>
+              <option>031</option>
+              <option>033</option>
+              <option>053</option>
+              <option>062</option>
+            </select> - <input class="hp" type="text"> - <input class="hp" type="text">
+            </td>
+            <tr>
+              <td class="kiki">-이메일</td>
+              <td class="kiki"><input id="email1" type="text">@
+                <select id="email2">
+                  <option>선택</option>
+                  <option>naver.com</option>
+                  <option>hanmail.net</option>
+                  <option>gmail.com</option>
+            </select>
+          </td>
+         </tr>
+         <tr>
+           <td class="kiki">-자기소개</td>
+           <td class="kiki"><textarea cols="50" rows="5"></textarea></td>
+         </tr>
+          <tr>
+            <td class="kiki">-파일첨부</td>
+            <td class="kiki"><input type="file">*2MB까지 가능</td>
+          </tr>
+          <tr>
+            <td class="kiki">-개인정보</td>
+            <td class="kiki"><input type="radio" name="info" checked>공개
+            <input type="radio" name="info">비공개<input type="radio" name="info">상관없음
+            </td>
+            </tr>
+            <tr>
+              <td class="kiki">-날짜</td>
+              <td class="kiki">
+              <input type="datetime-local"><br>
+            </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td class="kiki">
+                <source lang="javascript" line> <button onclick="alert('제출되었습니다')" value="테스트 버튼" type="submit"/>확인 </source>
+              </td>
+            </tr>
+        </table>
+    </section>
+
+    <footer class="clearfix">
+        <div class="float_left">
+            <!-- 왼편 푸터 -->
+            <ul id="footer_left" class="clearfix">
+                <li><a class="foot" href="profile.html">PROFILE</li>
+                <li><a class="foot" href="project.html">PROJECT</li>
+                <li><a class="foot" href="work.html">WORK</li>
+                <li><a class="foot" href="contact.html">CONTACT</li>
+            </ul>
+            <p>
+                ⓒ 2020 JUDY. All Right Reserved.
+            </p>
+            <p>
+                the loges in the design are the property of
+                their respective owners/copyright holders.
+            </p>
+        </div>
+        <div class="float_right">
+            <!-- 오른편 푸터 -->
+            <ul class="clearfix">
+                <li>
+                    <a href="https://www.instagram.com/01.04.10_hee/"/><img src="img/ins.png" />
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCRgGeuTDxlj5_eQybPM8WjA"/><img src="img/you.png" />
+                </li>
+                <li>
+                    <a href="https://blog.naver.com/3heej"/><img src="img/naver.png" />
+                </li>
+                <li>
+                    <a href="https://m.facebook.com/profile.php?ref=bookmarks"/><img src="img/face.png" />
+                </li>
+            </ul>
+        </div>
+    </footer>
+  </body>
+</html>

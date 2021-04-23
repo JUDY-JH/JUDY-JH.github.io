@@ -1,0 +1,230 @@
+<!DOCTYPE html><!--22061028 김주희-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WORK</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .menu p{
+            color: rgb(255, 255, 255);
+        }
+        .wrap{
+            min-width: 700px;
+            max-width: 16000px;
+            margin: 0px auto;
+        }
+        header{
+            background-color: #000000;
+            color: white;
+        }
+        header h1{
+            margin: 10px 0px;
+        }
+        header h1 span{
+            color: #fca9ff
+        }
+        header ul{
+            padding: 0px;
+            margin: 20px 0px;
+        }
+        header li{
+            float:left;
+            list-style: none;
+            padding: 0px 20px;
+        }
+        .float_left{
+            float:left;
+        }
+        .float_right{
+            float:right;
+        }
+        .clearfix::after{ /* float left 이상증상 방지 */
+            content: ""; /* 특정 브라우저 이상증상 해결용 */
+            clear: both; /* float 제거 : 양쪽(둘다) */
+            display: table; /* 특정 브라우저 이상증상 해결용 */
+        }
+        section {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        section h1{
+            color:orange;
+            font-size: 30px;
+            padding-top: 5px;
+            padding-bottom: 0px;
+        }
+        section h2 {
+            color:purple;
+        }
+        section p{
+            color:black;
+        }
+        #concert_ul{
+            padding: 0px;
+        }
+        .content>section{
+            padding: 50px;
+        }
+        .content>section>div{
+            width: 1000px;
+            margin: 0px auto;
+        }
+        .content>section:nth-child(1){
+            background-color: #9880B9;
+        }
+        .content>section>div>h3{
+            color: white;
+            font-size: 30px;
+        }
+        .content_part{
+            float: left;
+            width: 480px;
+            margin: 0px 10px;
+        }
+        .content_part dl{
+            margin: 0px;
+        }
+        .content_part dd{
+            margin: 0px;
+            font-weight: bolder;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .content_part dt{
+            font-weight: bold;
+            font-size: 12px;
+            margin: 10px 0px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        footer{
+            background-color: #333;
+            padding: 20px;
+            color: #F5A7BC;
+            font-weight: bold;
+        }
+        footer li{
+            float: left;
+            list-style: none;
+            padding:0px 10px;
+        }
+        /* footer ui:first-child li */
+        #footer_left li{
+             border-right:solid 1px gray;
+        }
+        #footer_left li:last-child{
+            border: none;
+        }
+        footer ul{
+            padding: 0px;
+        }
+        /*
+        footer>div{
+            float:left;
+        }
+        */
+        .menu{
+            text-decoration: none;
+            color:white;
+        }
+        .line {
+          text-decoration: none;
+        }
+        .mang {
+            text-decoration: none;
+            color: white;
+        }
+        .foot {
+          text-decoration: none;
+          color: pink;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h1 class="float_left"><a class="mang" href="index.html">L'effort est ma <span>force</span></a></h1>
+            <nav class="float_right">
+                <ul class="clearfix">
+                    <li><a class="menu" href="profile.html">PROFILE</a></li>
+                    <li><a class="menu" href="project.html">PROJECT</a></li>
+                    <li><a class="menu" href="work.html">WORK</a></li>
+                    <li><a class="menu" href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+      </div>
+
+      <section>
+          <h1>
+              WORK
+          </h1>
+          <p>
+              전문적으로는 작업이라 부르고 제게는 취미와도 같은 일들 입니다.
+          </p>
+      </section>
+      <div class="content">
+          <section>
+              <div class="clearfix">
+                  <div class="content_part">
+                      <a class="line" href="illustration.html"/><img src="img/pc7.jpg"/>
+                      <dl>
+                          <dt>♡</dt>
+                          <dd>
+                              illustration
+                          </dd>
+                      </dl>
+                  </div>
+                  <div class="content_part">
+                      <a class="line" href="photograph.html"/><img src="img/ppc1.jpg"/>
+                      <dl>
+                          <dt>♡</dt>
+                          <dd>
+                              photograph
+                          </dd>
+                      </dl>
+                  </div>
+              </div>
+          </section>
+       </div>
+
+    <footer class="clearfix">
+        <div class="float_left">
+            <!-- 왼편 푸터 -->
+            <ul id="footer_left" class="clearfix">
+                <li><a class="foot" href="profile.html">PROFILE</li>
+                <li><a class="foot" href="project.html">PROJECT</li>
+                <li><a class="foot" href="work.html">WORK</li>
+                <li><a class="foot" href="contact.html">CONTACT</li>
+            </ul>
+            <p>
+                ⓒ 2020 JUDY. All Right Reserved.
+            </p>
+            <p>
+                the loges in the design are the property of
+                their respective owners/copyright holders.
+            </p>
+        </div>
+        <div class="float_right">
+            <!-- 오른편 푸터 -->
+            <ul class="clearfix">
+                <li>
+                    <a href="https://www.instagram.com/01.04.10_hee/"/><img src="img/ins.png" />
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCRgGeuTDxlj5_eQybPM8WjA"/><img src="img/you.png" />
+                </li>
+                <li>
+                    <a href="https://blog.naver.com/3heej"/><img src="img/naver.png" />
+                </li>
+                <li>
+                    <a href="https://m.facebook.com/profile.php?ref=bookmarks"/><img src="img/face.png" />
+                </li>
+            </ul>
+        </div>
+    </footer>
+  </body>
+</html>
